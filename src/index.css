@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #000;
+}
+
+@media (max-width: 1024px) {
+	.right {
+		width: 100% !important;
+	}
+}
