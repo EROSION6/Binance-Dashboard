@@ -8,10 +8,11 @@ const Sidebar = () => {
 	const [isActive, setIsActive] = useState<number>(1);
 
 	const { open } = useContext(Context);
+
 	return (
 		<aside className={open ? 'xl:w-[6rem]' : 'w-0'}>
 			<div
-				className={`h-screen bg-[#101010] w-[15rem] px-4 xl:w-[6rem] md:fixed ${
+				className={`h-screen bg-[#101010] w-[15rem] px-4 xl:w-[6rem] md:fixed md:z-10 ${
 					open ? ' transform-x-0' : '-translate-x-[150%]'
 				} transition-transform duration-300 ease-in-out`}>
 				<div className='flex items-center text-white py-6 space-x-1 '>

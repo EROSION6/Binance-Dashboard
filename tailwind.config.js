@@ -5,7 +5,6 @@ export default {
 		extend: {
 			screens: {
 				smx: { max: '425px' },
-				smy: { max: '520px' },
 				md: { max: '768px' },
 				lg: { max: '1024px' },
 				xl: { max: '1280px' },

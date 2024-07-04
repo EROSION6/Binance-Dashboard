@@ -2,12 +2,12 @@ import { TABLE_DATA, TABLE_HEAD } from '../data';
 
 const TableCoin = () => {
 	return (
-		<div className='w-full border border-[#181717] bg-[#101010] rounded-lg mt-7 pl-12'>
+		<div className='w-full border border-[#181717] bg-[#101010] rounded-lg mt-7 pl-12 md:pl-5'>
 			<table className='w-full text-left '>
 				<thead>
 					<tr>
 						{TABLE_HEAD.map((head, i) => (
-							<th key={head} className={`py-3 ${i === 4 || i === 5 ? 'xl:hidden' : ''}`}>
+							<th key={head} className={`py-3 ${i === 4 || i === 5 ? 'xl:hidden' : ''} ${i === 3 ? 'md:hidden' : ''}`}>
 								<p className='font-normal text-[#606060]'>{head}</p>
 							</th>
 						))}
@@ -25,7 +25,7 @@ const TableCoin = () => {
 							<td className='pb-3'>
 								<p className='text-[#f33333]'>{table.change}%</p>
 							</td>
-							<td className='pb-3'>
+							<td className='pb-3 md:hidden'>
 								<p className='text-white'>{table.volume}</p>
 							</td>
 							<td className='pb-3 xl:hidden'>

@@ -15,7 +15,7 @@ const Navbar = () => {
 				<h1 className='text-white text-3xl'>Dashboard</h1>
 			</div>
 			<div className='lg:w-full'>
-				<div className='flex items-center space-x-7 relative justify-between'>
+				<div className='flex items-center space-x-7 relative justify-between md:justify-end'>
 					<RxHamburgerMenu
 						onClick={openAndCloseMenu}
 						className='text-[#606060] w-8 h-8 hidden lg:block'

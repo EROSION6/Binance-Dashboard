@@ -4,7 +4,7 @@ const TABLE_HEAD = ['Type', 'Asset', 'Date', 'Amount', 'Address', 'Status'];
 
 const RecentTransactionTable = () => {
 	return (
-		<div className='w-full border border-[#181717] bg-[#101010] rounded-lg mt-7 pl-12'>
+		<div className='w-full border border-[#181717] bg-[#101010] rounded-lg mt-7 pl-12 md:pl-2'>
 			<table className='w-full text-left '>
 				<thead>
 					<tr>
